@@ -5,12 +5,7 @@ var path = require("path");
 // create an "express" server in node
 var app = express();
 
-// app.use(express.static("public"));
-// app.use(express.static(__dirname + '/public'));
-// app.use('/static', express.static('public'))
-
-// app.use("/static", express.static(path.join(__dirname, "public")));
-
+// access files in public folder
 app.use(express.static("app/public/"));
 
 // sets an initial port
