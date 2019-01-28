@@ -10,13 +10,21 @@ Friend Finder is a compatibility based matchmaking application with a Stardew Va
 
 ![Demo](demo.gif)
 
+### Details
+
+`htmlRoutes.js` is used to GET the HTML pages as well as :
+
+   * A GET Route to `/survey` which should display the survey page.
+   * A default, catch-all route that leads to `home.html` which displays the home page.
+
+
 ### Technology used
 
 CSS3
 
-Express (npm package)
+Express
 
-Heroku (deployment)
+Heroku
 
 HTML5 
 
