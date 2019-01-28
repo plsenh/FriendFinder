@@ -1,8 +1,15 @@
 # Friend Finder - Node and Express Servers
 
+[https://stardewfriendfinder.herokuapp.com/](https://stardewfriendfinder.herokuapp.com/)
+
+![Friend Finder](friend_finder.PNG)
+
+
 ### Overview
 
 Friend Finder is a Node and Express based friend compatibility application. Users are matched by comparing their survey answers with answers from other users.
+
+
 
 4. Your `apiRoutes.js` file should contain two routes:
 
