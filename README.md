@@ -8,7 +8,7 @@
 
 Friend Finder is a compatibility based matchmaking application with a Stardew Valley theme. Users answer survey questions and are matched to the most compatible Stardew Valley character or other user based on each preference.
 
-![Demo](demo.PNG)
+![Demo](demo.gif)
 
 ### Technology used
 
