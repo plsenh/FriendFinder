@@ -1,0 +1,42 @@
+body {
+    background-color: lightblue;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.error {
+    color: red;
+}
+
+a, a:visited {
+    color: #000;
+}
+
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.jumbotron {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+@font-face {
+    font-family: "text";
+    src: url("../fonts/Stardew_Valley.ttf");
+}
+
+@font-face {
+    font-family: "title";
+    src: url("../fonts/burnstown_dam.ttf");
+}
+
+.SD-text {
+    font-family: "text";
+}
+
+.SD-title {
+    font-family: "title";
+}

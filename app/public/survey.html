@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Friend Finder</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="jumbotron">
+            <a href="/home">
+                <h1><span class="SD-title">Stardew Valley</span> <i class="fas fa-user-friends"></i> <span class="SD-text">Friend
+                        Finder</span></h1>
+            </a>
+            <hr>
+            <form class="SD-text">
+
+                <!-- user input -->
+                <div class="form-group">
+                    <h3><strong>About You</strong></h3>
+                    <label for="name">
+                        <h4>Name (Required)</h4>
+                    </label>
+                    <input type="text" id="user-name" class="form-control" placeholder="The Mayor">
+
+                    <label for="image">
+                        <h4>Link to Photo (Required)</h4>
+                    </label>
+                    <input type="text" id="user-photo" class="form-control" placeholder="http://www.image.com/image.jpg">
+                </div>
+
+                <!-- options -->
+                <h3><strong>How do you feel about the following?</strong></h3>
+
+                <div class="form-group">
+                    <h3><label for="q1"><strong>1. Amethyst <img src="https://stardewvalleywiki.com/mediawiki/images/2/2e/Amethyst.png"></strong></label></h3>
+                    <select class="selection" id="q1">
+                        <option value=""></option>
+                        <option value="1">Hate it!</option>
+                        <option value="2">Dislike it</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Like it</option>
+                        <option value="5">Love it!</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <h3><label for="q2"><strong>2. Complete Breakfast <img src="https://stardewvalleywiki.com/mediawiki/images/3/3d/Complete_Breakfast.png"></strong></label></h3>
+                    <select class="selection" id="q2">
+                        <option value=""></option>
+                        <option value="1">Hate it!</option>
+                        <option value="2">Dislike it</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Like it</option>
+                        <option value="5">Love it!</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <h3><label for="q3"><strong>3. Dandelion <img src="https://stardewvalleywiki.com/mediawiki/images/b/b1/Dandelion.png"></strong></label></h3>
+                    <select class="selection" id="q3">
+                        <option value=""></option>
+                        <option value="1">Hate it!</option>
+                        <option value="2">Dislike it</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Like it</option>
+                        <option value="5">Love it!</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <h3><label for="q4"><strong>4. Goat Cheese <img src="https://stardewvalleywiki.com/mediawiki/images/c/c8/Goat_Cheese.png"></strong></label></h3>
+                    <select class="selection" id="q4">
+                        <option value=""></option>
+                        <option value="1">Hate it!</option>
+                        <option value="2">Dislike it</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Like it</option>
+                        <option value="5">Love it!</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <h3><label for="q5"><strong>5. Sashimi <img src="https://stardewvalleywiki.com/mediawiki/images/4/41/Sashimi.png"></strong></label></h3>
+                    <select class="selection" id="q5">
+                        <option value=""></option>
+                        <option value="1">Hate it!</option>
+                        <option value="2">Dislike it</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Like it</option>
+                        <option value="5">Love it!</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <h3><label for="q6"><strong>6. Wild Horseradish <img src="https://stardewvalleywiki.com/mediawiki/images/9/90/Wild_Horseradish.png"></strong></label></h3>
+                    <select class="selection" id="q6">
+                        <option value=""></option>
+                        <option value="1">Hate it!</option>
+                        <option value="2">Dislike it</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Like it</option>
+                        <option value="5">Love it!</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <h3><label for="q7"><strong>7. Pizza <img src="https://stardewvalleywiki.com/mediawiki/images/f/f4/Pizza.png"></strong></label></h3>
+                    <select class="selection" id="q7">
+                        <option value=""></option>
+                        <option value="1">Hate it!</option>
+                        <option value="2">Dislike it</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Like it</option>
+                        <option value="5">Love it!</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <h3><label for="q8"><strong>8. Coconut <img src="https://stardewvalleywiki.com/mediawiki/images/2/2f/Coconut.png"></strong></label></h3>
+                    <select class="selection" id="q8">
+                        <option value=""></option>
+                        <option value="1">Hate it!</option>
+                        <option value="2">Dislike it</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Like it</option>
+                        <option value="5">Love it!</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <h3><label for="q9"><strong>9. Beer <img src="https://stardewvalleywiki.com/mediawiki/images/b/b3/Beer.png"></strong></label></h3>
+                    <select class="selection" id="q9">
+                        <option value=""></option>
+                        <option value="1">Hate it!</option>
+                        <option value="2">Dislike it</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Like it</option>
+                        <option value="5">Love it!</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <h3><label for="q10"><strong>10. Leek <img src="https://stardewvalleywiki.com/mediawiki/images/5/57/Leek.png"></strong></label></h3>
+                    <select class="selection" id="q10">
+                        <option value=""></option>
+                        <option value="1">Hate it!</option>
+                        <option value="2">Dislike it</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Like it</option>
+                        <option value="5">Love it!</option>
+                    </select>
+                </div>
+
+                <p>
+                    <!-- error message -->
+                    <div class="error"></div>
+
+                    <!-- Submit Button -->
+                    <!-- <button type="submit" class="btn btn-success" id="submit">Submit</button> -->
+                    <button type="submit" class="btn btn-success" id="submit" data-toggle="modal" data-target="#modal">Submit</button>
+                </p>
+
+            </form>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="results" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="exampleModalLabel">Your Best Match!</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- <div class="row">
+                            <div class="col">
+                                <h2 id="user-match-name"></h2>
+                                <img id="user-match-photo" src="" alt="user-match-photo">
+                            </div>
+
+                            <div class="col">
+                                and
+                            </div>
+
+                            <div class="col">
+                                <h2 id="best-match-name"></h2>
+                                <img id="best-match-photo" src="" alt="best-match-photo">
+                            </div>
+                        </div> -->
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2 id="user-match-name"></h2>
+                                <img id="user-match-photo" src="" alt="user-match-photo">
+                            </div>
+                            <div class="col-md-6">
+                                <h2 id="best-match-name"></h2>
+                                <img id="best-match-photo" src="" alt="best-match-photo">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <a href="/api/friends">API Friends List</a>
+            | <a href="https://github.com/plsenh/FriendFinder">GitHub Repo</a>
+            | <a href="https://www.dafont.com/burnstown-dam.font" target="_blank">Title Font</a>
+            | <a href="https://www.dropbox.com/sh/g1law0qmnf6pjwr/AACummg5fZJ5JIF4ReeRDxJia?dl=0" target="_blank">Text
+                Font</a>
+            | <a href="https://stardewvalleywiki.com/Stardew_Valley_Wiki" target="_blank">Images</a></p>
+        </footer>
+
+    </div>
+
+    <!-- quiz submission logic-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#submit").on("click", function (event) {
+                event.preventDefault();
+
+                // check if each form input has an input value
+                function validateForm() {
+                    var isAnswered = true;
+
+                    $(".form-control").each(function () {
+                        if ($(this).val().trim() === "") {
+                            isAnswered = false;
+                        }
+                    });
+
+                    $(".selection").each(function () {
+                        if ($(this).val() === "") {
+                            isAnswered = false;
+                        }
+                    });
+
+                    return isAnswered;
+                }
+
+                // when form is fully answered or incomplete
+                if (validateForm()) {
+                    var userData = {
+                        name: $("#user-name").val().trim(),
+                        photo: $("#user-photo").val().trim(),
+                        scores: [
+                            $("#q1").val(),
+                            $("#q2").val(),
+                            $("#q3").val(),
+                            $("#q4").val(),
+                            $("#q5").val(),
+                            $("#q6").val(),
+                            $("#q7").val(),
+                            $("#q8").val(),
+                            $("#q9").val(),
+                            $("#q10").val()
+                        ]
+                    };
+
+                    // submit user data to find and show best match
+                    $.post("/api/friends", userData, function (data) {
+                        $("#user-match-name").text($("#user-name").val().trim());
+                        $("#user-match-photo").attr("src", $("#user-photo").val().trim());
+                        $("#best-match-name").text(data.name);
+                        $("#best-match-photo").attr("src", data.photo);
+                        $("#results").modal("toggle");
+                    });
+                } else {
+                    $(".error").text("Please answer all questions before submitting");
+                }
+            });
+        })
+    </script>
+
+</body>
+
+</html>
