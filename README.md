@@ -40,7 +40,7 @@ Friend Finder is a compatibility based matchmaking application with a Stardew Va
 - [Node.js](https://nodejs.org/en/) - Open-source run-time environment that executes JS code outside of a browser.
 - [Visual Studio Code](https://code.visualstudio.com/) - Source code editor developed by Microsoft.
 
-## npm packages used:
+#### npm packages used:
 
 - [Express](https://www.npmjs.com/package/express) - Fast, unopinionated, minimalist web framework for node.
 
