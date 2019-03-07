@@ -33,12 +33,16 @@ Friend Finder is a compatibility based matchmaking application with a Stardew Va
 ## Built with:
 
 - CSS3
-- [Express](https://www.npmjs.com/package/express) - Fast, unopinionated, minimalist web framework for node.
 - [Heroku](https://heroku.com) - Cloud platform as a service supporting several programming languages.
 - HTML5
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - High-level programming language.
 - [jQuery](https://jquery.com/) - JavaScript library.
 - [Node.js](https://nodejs.org/en/) - Open-source run-time environment that executes JS code outside of a browser.
+- [Visual Studio Code](https://code.visualstudio.com/) - Source code editor developed by Microsoft.
+
+## npm packages used:
+
+- [Express](https://www.npmjs.com/package/express) - Fast, unopinionated, minimalist web framework for node.
 
 ---
 
