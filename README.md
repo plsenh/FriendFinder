@@ -48,4 +48,4 @@ Friend Finder is a compatibility based matchmaking application with a Stardew Va
 
 ## Author:
 
-- **Pauline Senh** - [plsenh](https://github.com/plsenh)
+- **Pauline S.** - [paulinegithub](https://github.com/paulinegithub)
